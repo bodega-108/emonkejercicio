@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url('img/retro-4237850_1920.jpg');
+    background-position: center;
+}
+/* =============================Estilos para cabecera======================================= */
+.header{
+    width: 100%;
+    height: 300px;
+    background: url('../img/E-MONKcopy.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.nav{
+    background:#eee;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+    .nav-enlace{
+        text-decoration: none;
+        color: #333;
+        margin-left: 10px;
+    }
+/* =============================Fin Estilos para cabecera======================================= */
+
+/* =============================Inicio Estilos para seccion centrar index======================================= */
+.section-presentacion{
+display: flex;
+justify-content: center;
+color: white;
+padding-top: 20px;
+}
+.contenedor{
+    background:rgba(255,255,255, .8);
+    width:400px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.titulo-juego{
+    position:absolute;
+    margin-top: 180px;
+
+}
+.presentacion{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles Form */
+.section{
+    display: flex;
+    justify-content:center;
+    padding-top: 100px;
+}
+
+.formulario{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.input-emonk{
+    width:80%;
+    margin-left: 40px;
+}
+.login{
+    text-align: center;
+    color:#333;
+}
+#username{
+    margin:5px;
+}
+#password{
+    margin:5px;
+}
+/* =============================Fin Estilos para seccion centrar index======================================= */
+
+/* =============================Estilos para la seccion de juego============================================= */
+.section-juego{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-jugador{
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    background:rgba(255,255,255, .8);
+    border-radius: 5px;
+}
+.contenedor-adversario{
+    text-align: center;
+    height: 300px;
+    width:400px;
+    background:whitesmoke;
+    border-radius: 5px;
+    background:rgba(255,255,255, .8);
+    
+
+}
+.header-juego{
+    display: flex;
+    justify-content:center;    
+    height:200px;
+    width: 100%;
+}
+.contenedor-versus{
+    background:url('img/vs.png');
+    background-size: contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:200px;
+    height: 200px;
+    position: relative;
+   
+}
+.numero{
+    margin-top: 70px;
+}
+.marcador{
+    font-family: 'Jockey One', sans-serif;
+    color:whitesmoke;
+    margin-top:60px;
+}
+.btn{
+margin-top:200px;
+margin-left:20px;
+background:#2BB522;
+}
+.alerta_error{
+    color:#E62D24;
+    font-size: 15px;
+    font-weight:bold;
+}
+.btn-play{
+    background:#2BB522;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    width: 70px;
+    padding:3px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-play:hover{
+    background:#0a4706;
+}
+footer{
+    color:whitesmoke;
+}
+/* =============================Fin Estilos para la seccion de juego============================================= */
+
+@media (max-width:830px){
+    .contenedor-jugador{
+        width: 250px; 
+        font-size: 13px;
+    }
+    .contenedor-versus{
+        width:150px;
+    }
+   
+    .contenedor-adversario{
+        width: 250px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
+@media (max-width:600px){
+    
+    .btn{
+        font-size:8px;
+        margin-left: 8px;
+    }
+}
